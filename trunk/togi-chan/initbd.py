@@ -1,0 +1,13 @@
+import gadfly
+baseDonn = gadfly.gadfly()
+baseDonn.startup("urlimages","BD/")
+cur = baseDonn.cursor()
+cur.execute("create table urlimages (url varchar)")
+baseDonn.commit()
+baseDonn.close()
+baseDonn = gadfly.gadfly()
+baseDonn.startup("nbre","BD/")
+cur = baseDonn.cursor()
+cur.execute("create table nombre (nbre int)")
+baseDonn.commit()
+baseDonn.close()
