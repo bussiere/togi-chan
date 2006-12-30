@@ -72,4 +72,5 @@ try:
         baseDonn.commit()
         baseDonn.close()
 except :
+    print errore + "\n"
     raw_input("Erreur")
